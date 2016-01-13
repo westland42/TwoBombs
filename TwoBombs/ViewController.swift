@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greenBombView: UIImageView!
+    @IBOutlet weak var redBombView: UIImageView!
+    @IBOutlet weak var hideGreenButton: UIButton!
+    @IBOutlet weak var hideRedButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func hideGreenAction(sender: AnyObject) {
+        greenBombView.hidden = true
+    }
 
+    @IBAction func hideRedAction(sender: AnyObject) {
+        redBombView.hidden = true
+    }
 }
 
